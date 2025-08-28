@@ -6,9 +6,9 @@
     { "src": "agent.js", "use": "@vercel/static" }
   ],
   "routes": [
-    {
-      "src": "/.*",
-      "dest": "/index.html"
-    }
+    { "src": "/(.*)\\.(css|js|mjs|map|png|jpg|jpeg|gif|svg|ico|webp|json|txt|webmanifest)", "dest": "/$1.$2" },
+    { "src": "/sw\\.js", "dest": "/sw.js" },
+    { "src": "/manifest\\.json", "dest": "/manifest.json" },
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
