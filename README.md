@@ -27,11 +27,14 @@ This demo shows how to wire that up in the simplest possible way for hacking and
 ## 📸 Example Conversation
 
 User: Interview me to create a blog post.
+
 Agent: Sure! What’s the post about?
 
 User: About IBM
+
 Agent: Let me search for IBM...
 [Google Search tool runs]
+
 Agent: IBM is a major technology company founded in 1911...
 
 
